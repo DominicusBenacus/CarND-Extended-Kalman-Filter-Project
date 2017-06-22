@@ -64,6 +64,9 @@ public:
    */
   void UpdateEKF(const Eigen::VectorXd &z);
 
+  // Calculate the lienearization of the H
+  Eigen::VectorXd linearizeH(const Eigen::VectorXd &x);
+
 };
 
 #endif /* KALMAN_FILTER_H_ */
